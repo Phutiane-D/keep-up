@@ -39,7 +39,7 @@ function MoneyRaised({ donations }) {
         if (
           monthsData[i] === new Date(donations[j].transactionDate).getMonth()
         ) {
-          temp = temp + Number(donations[j].amount.trim());
+          temp = temp + Number(donations[j].amount);
         }
       }
       money[i] = temp;

@@ -5,6 +5,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import DashboardIcon from "@material-ui/icons/Dashboard";
 import PeopleIcon from "@material-ui/icons/People";
 import EventIcon from "@material-ui/icons/Event";
+import VideoIcon from "@material-ui/icons/Videocam";
 import WorkIcon from "@material-ui/icons/Work";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import Link from "next/link";
@@ -41,6 +42,14 @@ export const mainListItems = (
           <EventIcon />
         </ListItemIcon>
         <ListItemText primary="Events" />
+      </ListItem>
+    </Link>
+    <Link href="/dashboard/media-pack">
+      <ListItem button>
+        <ListItemIcon>
+          <VideoIcon />
+        </ListItemIcon>
+        <ListItemText primary="Media-Pack" />
       </ListItem>
     </Link>
   </div>

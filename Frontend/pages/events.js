@@ -71,42 +71,7 @@ export default function events() {
           </h2>
         </div>
         <div className="desktop" className={classes.root}>
-          {/* {events.map(
-            (item) =>
-              isLater(item.date, dateString2) && (
-                <Paper className={"PaperDesktop"}>
-                  <Grid
-                    container
-                    spacing={0}
-                    style={{
-                      height: "100%",
-                      width: "100%",
-                      display: "inline-flexbox",
-                      alignContent: "center",
-                    }}
-                  >
-                    <Grid item xs={12} style={{ textAlign: "-webkit-center" }}>
-                      <p className={classes.heading}>
-                        {new Date(item.date).toLocaleString()}
-                      </p>
-                      <p
-                        style={{
-                          fontSize: "24px",
-                          fontWeight: "700",
-                          fontFamily: "Roboto",
-                        }}
-                      >
-                        {item.title}
-                      </p>
 
-                      <p className={classes.subtitle}> {item.description}</p>
-
-                      <p className={classes.heading}>{item.location}</p>
-                    </Grid>
-                  </Grid>
-                </Paper>
-              )
-          )} */}
           {events.map(
             (item) =>
               isLater(item.date, dateString2) && (

@@ -9,7 +9,13 @@ import Table from "../../components/dashboard/Table";
 import TableSkeleton from "../../components/TableSkeleton";
 
 const columns = [
-
+  {
+    field: "id",
+    title: "ID",
+    width: 70,
+    initialEditValue: Date.now(),
+    editable: "never",
+  },
   {
     field: "title",
     title: "Title",

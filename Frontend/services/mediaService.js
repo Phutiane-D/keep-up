@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 
 export const add = (media) => {
   try {
-    http.post('postMedia', media);
+    http.post('/addMedia', media);
   } catch (error) {
     console.log("Unexpected Error - ", error.message);
     toast.error("Unexpected Error occured");
@@ -30,11 +30,11 @@ export const remove = (mediaId) => {
   }
 };
 export const getAll = async () => {
-  const urlPath = `getMedia`;
+  const urlPath = `/getMedia`;
 
   try {
-    const { data } = await http.get(urlPath);
-    return data;
+    const data = await http.get(urlPath);
+    return data.data.Items;
   } catch (error) {
     console.error(error.message);
     toast.error("An error occured");

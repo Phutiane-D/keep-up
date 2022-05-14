@@ -41,11 +41,11 @@ const Heads = (props) => {
       <meta httpEquiv="X-UA-Compatible" content="IE=8,chrome=1" />
       {/* PWA primary color */}
       <meta name="theme-color" content={theme.palette.primary.main} />
-      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="shortcut icon" href="#" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="/static/apple-touch-icon.png"
+        href="/static/apple-touch-icon.png" 
       />
       <link rel="mask-icon" href="/static/favicon-mask.svg" color="#000000" />
       <meta property="og:url" content={props.url || defaultOGURL} />

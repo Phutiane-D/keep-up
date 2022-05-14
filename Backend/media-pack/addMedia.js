@@ -18,10 +18,10 @@ module.exports.postMedia = async (e, ctx, callback) => {
   var params = {
     TableName: process.env.MEDIA_TABLE,
     Item: {
-      title,
       link,
+      id: Date.now(),
       description,
-      eventId: Date.now(),
+      title,
       suburb,
     },
   };

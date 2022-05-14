@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import MaterialTable from 'material-table';
+import MaterialTable from '@material-table/core';
 import AddBox from "@material-ui/icons/AddBox";
 import ArrowDownward from "@material-ui/icons/ArrowDownward";
 import Check from "@material-ui/icons/Check";
@@ -84,8 +84,7 @@ function Editable({
           new Promise((resolve, reject) => {
             setTimeout(() => {
               addItem(newData);
-              setData({...data, newData});
-              console.log(newData);
+              setData([...data, newData]);
               resolve();
             }, 1000);
           }),
